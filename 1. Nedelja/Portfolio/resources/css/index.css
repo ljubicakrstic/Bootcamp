@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body > .container-fluid{
+  padding: 0;
+}
+
+
+
+nav{
+     min-height: 8vh;
+     background-color: rgb(92, 141, 111); 
+}
+
+
+
+  .home-background{
+    margin-top: 8vh;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .home-text{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7); 
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+.name{
+  font-size: 5vw; 
+  font-weight: lighter;
+}
+
+
+.description{
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgb(92, 141, 111);
+}
+
+.ljubica{
+  border: 2px solid white;
+  border-radius: 100%;
+  max-width: 200px;
+}
+
+.about{
+  border-top: 2px solid rgb(92, 141, 111);
+  border-bottom: 2px solid rgb(92, 141, 111);
+}
+
+.about-img-background{
+  background-image: url("../../images/about.jpg");
+  border-right: 2px solid rgb(92, 141, 111);
+}
+
+
+
+.about-decsription{
+  padding: 5% !important;
+}
+
+.about-decsription .btn{
+  background-color: rgb(92, 141, 111);
+  margin: 5%;
+}
+
+
+.about-caption{
+  color:  rgb(92, 141, 111); 
+  text-align: center;
+  font-style: italic;
+  font-size: 400%;
+}
+
+.work{
+  padding-top: 5%;
+}
+
+.buttons{
+  text-align: center;
+}
+
+.contact{
+  padding: 5%;
+  background-image: url("../../images/background1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-inside{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7); 
+    color: white;
+    border: 1px solid white;
+    padding: 5%;
+    z-index: 2;
+}
+
+.contact-btn{
+  background-color: rgb(92, 141, 111) !important;
+}
+
+footer{
+  height: 8vh;
+  background-color: rgb(92, 141, 111);
+  position: relative;
+}
+
+footer img{
+  height: 30px;
+  margin-left: 10px;
+}
+
+.social-media{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
