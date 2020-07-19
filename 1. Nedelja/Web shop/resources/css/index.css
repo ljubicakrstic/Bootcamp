@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+main{
+  background-color: rgb(238, 238, 238);
+}
+
+nav{
+  position: relative;
+}
+
+nav ul{
+  display: inline-block;
+  margin-left: 10%;
+  height: 100%;
+}
+
+nav ul li{
+  display: inline-block;
+  height: 100%;
+  padding: 1em;
+}
+
+
+.link{
+  margin-left: 30px;
+}
+
+.active{
+  background-color: rgb(36, 135, 168);
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+header{
+  height: 15vh;
+}
+
+.total{
+  position: absolute;
+  right: 15%;
+  padding-top: 10px;
+  color: white;
+  font-size: large;
+}
+
+.cart{
+  margin-right: 20px;
+  height: 2em;
+  width: 2em;
+}
+
+.logo{
+  height: 50%;
+  background-color: rgb(238, 238, 238);
+  position: relative;
+}
+
+header nav{
+  height: 50%;
+  background-color: rgb(0, 174, 255);
+}
+
+.grid-container .items-block img{
+  width: 150px;
+  
+}
+
+.logo h1{
+  color: gray;
+  margin-left: 10%;
+}
+
+.social-media-icon{
+  height: 30px;
+}
+
+.social-media{
+  position: absolute;
+  right: 15%;
+  top: 25%;
+}
+
+h1 .ds{
+  color: rgb(0, 174, 255);
+}
+
+.plus{
+  color: rgb(107, 10, 10);
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.cena{
+  color: rgb(2, 88, 2);
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "items-block items-block items-block shop-block" "items-block items-block items-block shop-block" "items-block items-block items-block shop-block";
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.items-block { grid-area: items-block; }
+
+.shop-block { 
+  grid-area: shop-block; 
+}
+
+.shop-block img{
+  height: 40px;
+}
+
+.grid-container-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 40px;
+  grid-template-areas: "img1 img2 img3 img4" "img5 img6 img7 img8" "img9 img10 img11 img12";
+  padding-top: 5%;
+}
+
+.img1 { grid-area: img1; }
+
+.img2 { grid-area: img2; }
+
+.img3 { grid-area: img3; }
+
+.img4 { grid-area: img4; }
+
+.img5 { grid-area: img5; }
+
+.img6 { grid-area: img6; }
+
+.img7 { grid-area: img7; }
+
+.img8 { grid-area: img8; }
+
+.img9 { grid-area: img9; }
+
+.img10 { grid-area: img10; }
+
+.img11 { grid-area: img11; }
+
+.img12 { grid-area: img12; }
+
+.grid-container-shop {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 1px;
+  grid-template-areas: "shop-img-1 shop-item-1" "shop-img-2 shop-item-2" "shop-img-3 shop-item-3" "shop-img-4 shop-item-4" "shop-button shop-button";
+  background-color: gray;
+  padding: 30px;
+  margin-left: 20%;
+  color: white;
+}
+
+.shop-img-1 { grid-area: shop-img-1; }
+
+.shop-item-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "shop-description-1" "shop-price-1";
+  grid-area: shop-item-1;
+}
+
+.shop-description-1 { grid-area: shop-description-1; }
+
+.shop-price-1 { grid-area: shop-price-1; }
+
+.shop-img-2 { grid-area: shop-img-2; }
+
+.shop-item-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "shop-description-2" "shop-price-2";
+  grid-area: shop-item-2;
+}
+
+.shop-description-2 { grid-area: shop-description-2; }
+
+.shop-price-2 { grid-area: shop-price-2; }
+
+.shop-img-3 { grid-area: shop-img-3; }
+
+.shop-item-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "shop-description-3" "shop-price-3";
+  grid-area: shop-item-3;
+}
+
+.shop-description-3 { grid-area: shop-description-3; }
+
+.shop-price-3 { grid-area: shop-price-3; }
+
+.shop-img-4 { grid-area: shop-img-4; }
+
+.shop-item-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "shop-description-4" "shop-price-4";
+  grid-area: shop-item-4;
+}
+
+.shop-description-4 { grid-area: shop-description-4; }
+
+.shop-price-4 { grid-area: shop-price-4; }
+
+.shop-button { grid-area: shop-button; }
+
+.shop-button .btn{
+  width: 100%;
+}
+
+footer{
+  height: 7vh;
+  background-color: white;
+  position: relative;
+}
+
+.img-zastava{
+  height: 30px;
+  border-radius: 20%;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+
+}
+
+.footer-txt{
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
