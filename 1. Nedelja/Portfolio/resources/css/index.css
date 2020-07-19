@@ -12,6 +12,9 @@ body > .container-fluid{
 nav{
      min-height: 8vh;
      background-color: rgb(92, 141, 111); 
+     -webkit-box-shadow: 0px 7px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 11px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 11px -4px rgba(0,0,0,0.75);
 }
 
 
