@@ -139,3 +139,7 @@ footer img{
   right: 5%;
   top: 20%;
 }
+
+.card-img-top:hover{
+  opacity: 0.5;
+}
