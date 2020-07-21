@@ -1,4 +1,6 @@
-//DELJIVO SA 5 DO 1.000
+//PRVIH 1.000 DELJIVIH SA 5
+
+//WHILE
 
 
 {
@@ -14,3 +16,12 @@
 }
 
 
+//FOR
+
+{
+   let a = 0; 
+   for(let i = 1; i <= 1000; i++){
+        console.log(a);
+        a+=5;
+   }
+}
