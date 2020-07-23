@@ -7,7 +7,7 @@
 
 {
    let N = 5;
-   var i = 1;
+   let i = 1;
    
    while(i <= N){
         let red = "";
