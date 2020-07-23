@@ -6,12 +6,13 @@
 // #####
 
 {
-    let N = 0;
+    let N = 7;
+    let i = 0;
     let red = "";
-    while(N < 5){
+    while(i < N){
         red += "#";
         console.log(red);
-        N++;
+        i++;
     }
 }
 
