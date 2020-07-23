@@ -6,7 +6,7 @@
 // ##### #####
 
 {
-    let N = 10;
+    let N = 5;
     let i = 1;
 
     while(i <= N){
