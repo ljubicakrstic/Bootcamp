@@ -10,9 +10,9 @@
         if(a % 5 == 0){
             odgovor += "Buzz";
         }
-         if(a % 2 == 0){
-             odgovor += "Puzz";
-         }
+         //if(a % 2 == 0){
+        //      odgovor += "Puzz";
+        //  }
         if(odgovor == ""){
             odgovor += a;
         }
