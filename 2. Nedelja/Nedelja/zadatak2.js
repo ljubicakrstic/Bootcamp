@@ -2,18 +2,16 @@
 
 {
     let a = 1;
-    let brojevi = [];
+    let odgovor = "";
     while(a <= 100){
-        if(a % 15 == 0){
-            brojevi.push("FizzBuzz");
-        }else if(a % 3 == 0){
-            brojevi.push("Fizz");
-        }else if(a % 5 == 0){
-            brojevi.push("Buzz");
-        }else{
-            brojevi.push(a);
+        if(a % 3 == 0){
+            odgovor += "Fizz";
         }
+        if(a % 5 == 0){
+            odgovor += "Buzz";
+        }
+        odgovor += a;
         a++;
     }
-    console.log(brojevi);
+    console.log(odgovor);
 }
