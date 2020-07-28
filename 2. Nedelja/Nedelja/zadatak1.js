@@ -1,6 +1,6 @@
 
 {
-    let cena = 300;
+    let cena = 100;
     let precnik = 10;
 
     let r = precnik/2;
