@@ -17,7 +17,7 @@
 // ili
 
     function nadjiMaksimum(x, y, z){
-        let max = 0;
+        let max = x;
         let brojevi = [x, y, z];
         brojevi.forEach(element => {
             if(element > max){
@@ -26,4 +26,5 @@
         });
         return max;
     }
-    console.log(nadjiMaksimum(1, 10, 11));
+    console.log(nadjiMaksimum(10, 123, -12));
+
