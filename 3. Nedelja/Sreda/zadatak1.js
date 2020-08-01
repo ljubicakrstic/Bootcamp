@@ -14,7 +14,7 @@
     }
     console.log(nadjiMax(9, -3, 1));
 
-// ili
+    //ili
 
     function nadjiMaksimum(x, y, z){
         let max = x;
@@ -27,4 +27,3 @@
         return max;
     }
     console.log(nadjiMaksimum(10, 123, -12));
-
