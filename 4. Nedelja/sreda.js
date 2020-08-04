@@ -72,7 +72,7 @@ let pokemoni = [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6];
 
 // 2. Napraviti f-ju koja prima gornji niz i vraca niz sposobnosti svih pokemona;
 function vratiSposobnosti(pokemoni){
-    return pokemoni.map(pokemon => pokemon.sposobnosti);
+    return pokemoni.map(pokemon =>pokemon.sposobnosti).flat();
 }
 
 console.log(vratiSposobnosti(pokemoni));
