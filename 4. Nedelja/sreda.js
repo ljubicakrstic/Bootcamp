@@ -68,6 +68,7 @@ let pokemon6 = {
 }
 
 let pokemoni = [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6];
+console.log(pokemoni);
 
 
 // 2. Napraviti f-ju koja prima gornji niz i vraca niz sposobnosti svih pokemona;
@@ -80,7 +81,7 @@ console.log(vratiSposobnosti(pokemoni));
 
 // 3. Sortirati pokemone po brzini, rastuce;
 {
-    pokemoni.sort((a, b) => b.karakteristike.brzina - a.karakteristike.brzina);
-    console.log(pokemoni);
+    let newPokemoni = pokemoni.sort((a, b) => a.karakteristike.brzina - b.karakteristike.brzina).map(pokemon => pokemon.ime);
+    console.log(newPokemoni);
 }
 
