@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "pokemon1 pokemon2 pokemon3" "pokemon4 pokemon5 pokemon6";
+    margin-left: 100px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .pokemon1 { grid-area: pokemon1; }
+  
+  .pokemon2 { grid-area: pokemon2; }
+  
+  .pokemon3 { grid-area: pokemon3; }
+  
+  .pokemon4 { grid-area: pokemon4; }
+  
+  .pokemon5 { grid-area: pokemon5; }
+  
+  .pokemon6 { grid-area: pokemon6; }
