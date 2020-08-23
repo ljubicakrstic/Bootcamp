@@ -16,7 +16,7 @@ function addPercentageToExpence(expense, percentage){
 function percentageTotal(incomesTotal, expensesTotal){
     let percentage = calculatePercentage(expensesTotal, incomesTotal)
     if(expensesTotal == 0){
-        return;
+        percentage = "";
     }else if(percentage == Infinity){
         percentage = 0;
     }

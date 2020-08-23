@@ -90,3 +90,8 @@
 .fa-check{
     color: rgb(255, 113, 107);
 }
+
+.delete-btn{
+    display: none;
+    border: 2px solid  rgb(255, 113, 107);
+}
