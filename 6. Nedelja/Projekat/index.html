@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/324e7a528b.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Budzet</title>
+</head>
+
+<body>
+    <div id="app" class="container-fluid">
+        <div class="available-wrapper text-center">
+           <p class="text">Dostupan budžet u avgustu 2020:</p>
+           <span id="balance">0</span>
+            <div class="row">
+                <div class="incomes-total col-2 offset-5">
+                    <span class="title">PRIHOD</span>
+                    <span class="amount"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="expeses-total col-2 offset-5">
+                    <span class="title">RASHOD</span>
+                    <span class="amount">
+                        <span class="amount-wrap"></span>
+                        <span class="percentage-wrap"></span>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <form id="form">
+                <div class="form-row">
+                    <div class="col">
+                        <select name="type" id="type" class="form-control">
+                            <option value="" selected disabled>-</option>
+                            <option value="in">Prihod</option>
+                            <option value="out">Rashod</option>
+                        </select>
+                        <p id="errType" class="errorMsg"></p>
+                    </div>  
+                    <div class="col">
+                        <input type="text" class="form-control" id="desc" placeholder="Opis">
+                        <p id="errDesc" class="errorMsg"></p>
+                    </div> 
+                    <div class="col">
+                        <input type="number" class="form-control" id="amount" placeholder="Iznos">
+                        <p id="errAmount" class="errorMsg"></p>
+                    </div>
+                    <button class="btn btn-add"><i class="fa fa-check" aria-hidden="true"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="list-wrapper row">
+            <div class="incomes col-sm-6">
+                <table class="table table-striped" id="incomes-table">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="color: rgb(40, 185, 180);">PRIHODI</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="expenses col-sm-6">
+                <table class="table table-striped" id="expenses-table">
+                    <thead>
+                      <tr>
+                        <th scope="col" style="color: rgb(255, 81, 74);">RASHODI</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
