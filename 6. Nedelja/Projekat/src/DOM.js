@@ -35,14 +35,10 @@ function drawIncomes(incomes){
         const tableRow = document.createElement("tr");
         const incomeDesc = document.createElement("td");
         incomeDesc.textContent = el.description;
-
-        const deleteBtnTd = document.createElement("td");
-        deleteBtnTd.innerHTML = `<button style='display: none' onclick= 'deleteIncome(${el.id})'>Delete</button>`;
-
         const incomeAmount = document.createElement("td");
         incomeAmount.className = "text-right income-blue";
         incomeAmount.textContent = formatValue(el.amount).replace('$', '');
-        tableRow.append(incomeDesc, deleteBtnTd, incomeAmount);
+        tableRow.append(incomeDesc, incomeAmount);
         incomesTable.children[1].appendChild(tableRow);
     });  
 }
